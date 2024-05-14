@@ -59,8 +59,15 @@ public class TC2_LoginPageStep extends BaseClassBook {
 
 	@When("User enter the value of required fields {string},{string},{string},{string} and {string}")
 	public void user_enter_the_value_of_required_fields_and(String fName, String lName, String uName, String passWord,
-			String confirmPass) {
+			String confirmPass) throws InterruptedException {
+
 		manager.getLoginPage().registrationBlock(fName, lName, uName, passWord, confirmPass);
+
+	}
+
+	@When("User clicl the register button after enter  all the fields")
+	public void user_clicl_the_register_button_after_enter_all_the_fields() {
+		manager.getLoginPage().registrationClick();
 
 	}
 

@@ -21,7 +21,8 @@ Feature: Automation for an login page
     And User to click the login option
     And User to click the register option
     And User enter the value of required fields "<fName>","<lName>","<uName>","<passWord>" and "<confirmPass>"
+    And User clicl the register button after enter  all the fields
 
     Examples: 
-      | fName  | lName | uName | passWord   | confirmPass |
-      | Mahesh | P     | mashp | mashp@1803 | mashp@1803  |
+      | fName  | lName | uName     | passWord   | confirmPass |
+      | Mahesh | P     | mashp1803 | Mashp@1803 | Mashp@1803  |
