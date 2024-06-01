@@ -7,6 +7,7 @@ Feature: Automation for an login page
     Then User should verify the success messge after click the login button "New User"
     And User should verify the success messge after click the login button for Registration"Register"
 
+  @Run
   Scenario: Automation of login details without credential
     Given User select to the chrome browser
     When User navigate to the URL
@@ -14,7 +15,6 @@ Feature: Automation for an login page
     And User to click the login button
     Then User should verify the error message after click login button "Username" and "Password"
 
-  @Run
   Scenario Outline: Automation of registration
     Given User select to the chrome browser
     When User navigate to the URL

@@ -1,15 +1,29 @@
 package com.base;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.nio.file.CopyOption;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import com.google.common.io.Files;
+
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import java.io.File;
+import org.apache.commons.io.FileUtils;
+
 public class BaseClassBook {
-	
+
 	public static WebDriver driver;
 	String[] allWindows;
 	String parentWindow;
@@ -81,4 +95,20 @@ public class BaseClassBook {
 
 	}
 
+	public void quiteWindow() {
+		driver.quit();
+
+	}
+
+	public void screenShot() throws IOException {
+		
+		TakesScreenshot screenshot = (TakesScreenshot) driver;
+
+		File screenshotAs = screenshot.getScreenshotAs(OutputType.FILE);
+
+		File s = new File("C:\\Users\\ABINESH\\OneDrive\\Desktop\\Mahesh P\\BookCart\\target\\Screenshot");
+
+		Files.copy(screenshotAs, s);
+
+	}
 }
