@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\ABINESH\AppData\Local\Temp\testng-eclipse-29577062\testng-customsuite.xml</span>
+                    <span>C:\Users\ABINESH\AppData\Local\Temp\testng-eclipse--1807751681\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">3 methods, 3 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,7 +104,17 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Automation of login details without credential&quot;, &quot;Automation for an login page&quot;)">runScenario("Automation of login details without credential", "Automation for an login page")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;First page automation&quot;, &quot;Book cart page automation&quot;)">runScenario("First page automation", "Book cart page automation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;First page automation&quot;, &quot;Book cart page automation&quot;)">runScenario("First page automation", "Book cart page automation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;First page automation&quot;, &quot;Book cart page automation&quot;)">runScenario("First page automation", "Book cart page automation")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -127,11 +137,11 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Automation of login details without credential&quot;, &quot;Automation for an login page&quot;)">
-                  </a> <!-- runScenario("Automation of login details without credential", "Automation for an login page") -->
+                  <a name="runScenario(&quot;First page automation&quot;, &quot;Book cart page automation&quot;)">
+                  </a> <!-- runScenario("First page automation", "Book cart page automation") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Automation of login details without credential", "Automation for an login page")</span>
-                  <div class="stack-trace">java.io.FileNotFoundException: C:\Users\ABINESH\OneDrive\Desktop\Mahesh P\BookCart\target\Screenshot (Access is denied)
+                  <span class="parameters">("First page automation", "Book cart page automation")</span>
+                  <div class="stack-trace">java.io.FileNotFoundException: C:\Users\ABINESH\OneDrive\Desktop\Mahesh P\BookCart\target\Screenshot\ screenshot 0.png (The system cannot find the path specified)
 	at java.base/java.io.FileOutputStream.open0(Native Method)
 	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
 	at java.base/java.io.FileOutputStream.&lt;init&gt;(FileOutputStream.java:235)
@@ -139,8 +149,78 @@
 	at com.google.common.io.Files$FileByteSink.openStream(Files.java:185)
 	at com.google.common.io.ByteSource.copyTo(ByteSource.java:279)
 	at com.google.common.io.Files.copy(Files.java:328)
-	at com.base.BaseClassBook.screenShot(BaseClassBook.java:111)
-	at com.step.TC_HookClass.afterScenario(TC_HookClass.java:23)
+	at com.base.BaseClassBook.screenShot(BaseClassBook.java:115)
+	at com.step.TC_HookClass.afterScenario(TC_HookClass.java:22)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;First page automation&quot;, &quot;Book cart page automation&quot;)">
+                  </a> <!-- runScenario("First page automation", "Book cart page automation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("First page automation", "Book cart page automation")</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: chrome not reachable 
+Host info: host: &apos;DESKTOP-HA9J99N&apos;, ip: &apos;192.168.1.26&apos;
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Program Files\Google\Chr..., extensions: []}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:168)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:108)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:89)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:84)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:52)
+	at com.base.BaseClassBook.launchBrowser(BaseClassBook.java:41)
+	at com.step.TC1_FirstPageStep.user_select_to_the_chrome_browser(TC1_FirstPageStep.java:16)
+	at ✽.User select to the chrome browser(file:///C:/Users/ABINESH/OneDrive/Desktop/Mahesh%20P/BookCart/src/test/resources/Features/target/test-classes/Features/TC1_FirstPage.feature:15)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;First page automation&quot;, &quot;Book cart page automation&quot;)">
+                  </a> <!-- runScenario("First page automation", "Book cart page automation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("First page automation", "Book cart page automation")</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: crashed.
+  (session not created: DevToolsActivePort file doesn&apos;t exist)
+  (The process started from chrome location C:\Program Files\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: &apos;DESKTOP-HA9J99N&apos;, ip: &apos;192.168.1.26&apos;
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Program Files\Google\Chr..., extensions: []}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:168)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:108)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:89)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:84)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:52)
+	at com.base.BaseClassBook.launchBrowser(BaseClassBook.java:41)
+	at com.step.TC1_FirstPageStep.user_select_to_the_chrome_browser(TC1_FirstPageStep.java:16)
+	at ✽.User select to the chrome browser(file:///C:/Users/ABINESH/OneDrive/Desktop/Mahesh%20P/BookCart/src/test/resources/Features/target/test-classes/Features/TC1_FirstPage.feature:10)
 
 </div> <!-- stack-trace -->
                   <em>
@@ -152,7 +232,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ABINESH\AppData\Local\Temp\testng-eclipse-29577062\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\ABINESH\AppData\Local\Temp\testng-eclipse--1807751681\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -209,16 +289,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'com.runner.TestRunner')
-data.setCell(0, 3, 36866);
+data.setCell(0, 3, 66613);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'com.runner.TestRunner')
+data.setCell(1, 3, 30448);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'com.runner.TestRunner')
+data.setCell(2, 3, 5749);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 36 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -246,18 +334,30 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.runner.TestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@2e66bc32)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@7b4a0aef)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">runScenario("Automation of login details without credential", "Automation for an login page")</span>
-                <span class="method-start">2088 ms</span>
+                <span class="method-name">runScenario("First page automation", "Book cart page automation")</span>
+                <span class="method-start">1856 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("First page automation", "Book cart page automation")</span>
+                <span class="method-start">32321 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("First page automation", "Book cart page automation")</span>
+                <span class="method-start">38070 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">38965 ms</span>
+                <span class="method-start">104704 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

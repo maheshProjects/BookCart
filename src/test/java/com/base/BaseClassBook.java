@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.nio.file.CopyOption;
+import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
@@ -27,6 +28,8 @@ public class BaseClassBook {
 	public static WebDriver driver;
 	String[] allWindows;
 	String parentWindow;
+
+	int S = 0;
 
 	public void printMessage(String string) {
 		System.out.println(string);
@@ -101,14 +104,16 @@ public class BaseClassBook {
 	}
 
 	public void screenShot() throws IOException {
-		
+
 		TakesScreenshot screenshot = (TakesScreenshot) driver;
 
 		File screenshotAs = screenshot.getScreenshotAs(OutputType.FILE);
 
-		File s = new File("C:\\Users\\ABINESH\\OneDrive\\Desktop\\Mahesh P\\BookCart\\target\\Screenshot");
+		File s = new File("C:\\Users\\ABINESH\\OneDrive\\Desktop\\Mahesh P\\BookCart\\target\\Screenshot\\ screenshot "
+				+ S + ".png");
 
 		Files.copy(screenshotAs, s);
 
+		S++;
 	}
 }

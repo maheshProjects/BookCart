@@ -1,3 +1,4 @@
+@Run
 Feature: Book cart page automation
 
   Scenario: First page automation

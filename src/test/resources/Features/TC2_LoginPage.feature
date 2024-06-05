@@ -1,3 +1,4 @@
+
 Feature: Automation for an login page
 
   Scenario: Automation of login details
@@ -7,7 +8,6 @@ Feature: Automation for an login page
     Then User should verify the success messge after click the login button "New User"
     And User should verify the success messge after click the login button for Registration"Register"
 
-  @Run
   Scenario: Automation of login details without credential
     Given User select to the chrome browser
     When User navigate to the URL
@@ -21,7 +21,7 @@ Feature: Automation for an login page
     And User to click the login option
     And User to click the register option
     And User enter the value of required fields "<fName>","<lName>","<uName>","<passWord>" and "<confirmPass>"
-    And User clicl the register button after enter  all the fields
+    And User click the register button after enter  all the fields
 
     Examples: 
       | fName  | lName | uName     | passWord   | confirmPass |

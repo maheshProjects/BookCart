@@ -17,11 +17,11 @@ public class TC_HookClass extends BaseClassBook {
 
 	@After
 	public void afterScenario() throws IOException, InterruptedException {
-
-		System.out.println(" Scenario Complete");
+        
 		Thread.sleep(1500);
 		screenShot();
 		Thread.sleep(1500);
+		
 		quiteWindow();
 
 		System.out.println(" Scenario Complete");
