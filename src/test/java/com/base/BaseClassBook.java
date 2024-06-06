@@ -109,11 +109,10 @@ public class BaseClassBook {
 
 		File screenshotAs = screenshot.getScreenshotAs(OutputType.FILE);
 
-		File s = new File("C:\\Users\\ABINESH\\OneDrive\\Desktop\\Mahesh P\\BookCart\\target\\Screenshot\\ screenshot "
-				+ S + ".png");
+		File s = new File("C:\\Users\\ABINESH\\OneDrive\\Desktop\\Mahesh P\\BookCart\\target\\Screenshot\\ screenshot.png");
 
 		Files.copy(screenshotAs, s);
 
-		S++;
+		S=S+1;
 	}
 }

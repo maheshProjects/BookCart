@@ -1,6 +1,6 @@
-@Run
 Feature: Book cart page automation
 
+  @Run
   Scenario: First page automation
     Given User select to the chrome browser
     When User navigate to the URL

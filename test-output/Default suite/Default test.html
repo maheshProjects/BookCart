@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/3/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jun 05 19:08:25 IST 2024</td>
+<td>Started on:</td><td>Thu Jun 06 13:35:06 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>138 seconds (138902 ms)</td>
+<tr><td>Total time:</td><td>29 seconds (29085 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,117 +76,7 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "First page automation", "Book cart page automation"</td>
-<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: disconnected: Unable to receive message from renderer
-  (failed to check if window was closed: disconnected: not connected to DevTools)
-  (Session info: chrome=125.0.6422.142) 
-Host info: host: &apos;DESKTOP-HA9J99N&apos;, ip: &apos;192.168.1.26&apos;
-Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Program Files\Google\Chr..., extensions: []}}]}]
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:168)
-	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:108)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:89)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:84)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:52)
-	at com.base.BaseClassBook.launchBrowser(BaseClassBook.java:41)
-	at com.step.TC1_FirstPageStep.user_select_to_the_chrome_browser(TC1_FirstPageStep.java:16)
-	at ✽.User select to the chrome browser(file:///C:/Users/ABINESH/OneDrive/Desktop/Mahesh%20P/BookCart/src/test/resources/Features/TC1_FirstPage.feature:10)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1015539383", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1015539383'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: disconnected: Unable to receive message from renderer
-  (failed to check if window was closed: disconnected: not connected to DevTools)
-  (Session info: chrome=125.0.6422.142) 
-Host info: host: &apos;DESKTOP-HA9J99N&apos;, ip: &apos;192.168.1.26&apos;
-Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Program Files\Google\Chr..., extensions: []}}]}]
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:168)
-	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:108)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:89)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:84)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:52)
-	at com.base.BaseClassBook.launchBrowser(BaseClassBook.java:41)
-	at com.step.TC1_FirstPageStep.user_select_to_the_chrome_browser(TC1_FirstPageStep.java:16)
-	at ✽.User select to the chrome browser(file:///C:/Users/ABINESH/OneDrive/Desktop/Mahesh%20P/BookCart/src/test/resources/Features/TC1_FirstPage.feature:10)
-</pre></div></td>
-<td>101</td>
-<td>com.runner.TestRunner@7db12bb6</td></tr>
-<tr>
-<td title='com.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "First page automation", "Book cart page automation"</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: disconnected: received Inspector.detached event
-  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
-  (Session info: chrome=125.0.6422.142)
-Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9dd0b022e621d012862b66332bafd5a8, get {url=https://bookcart.azurewebsites.net/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\ABINESH\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57749}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57749/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9dd0b022e621d012862b66332bafd5a8
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:309)
-	at com.base.BaseClassBook.loadUrl(BaseClassBook.java:47)
-	at com.step.TC1_FirstPageStep.user_navigate_to_the_url(TC1_FirstPageStep.java:22)
-	at ✽.User navigate to the URL(file:///C:/Users/ABINESH/OneDrive/Desktop/Mahesh%20P/BookCart/src/test/resources/Features/TC1_FirstPage.feature:16)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1549623669", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1549623669'><pre>org.openqa.selenium.WebDriverException: disconnected: received Inspector.detached event
-  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
-  (Session info: chrome=125.0.6422.142)
-Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9dd0b022e621d012862b66332bafd5a8, get {url=https://bookcart.azurewebsites.net/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\ABINESH\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57749}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57749/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9dd0b022e621d012862b66332bafd5a8
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:309)
-	at com.base.BaseClassBook.loadUrl(BaseClassBook.java:47)
-	at com.step.TC1_FirstPageStep.user_navigate_to_the_url(TC1_FirstPageStep.java:22)
-	at ✽.User navigate to the URL(file:///C:/Users/ABINESH/OneDrive/Desktop/Mahesh%20P/BookCart/src/test/resources/Features/TC1_FirstPage.feature:16)
-</pre></div></td>
-<td>8</td>
-<td>com.runner.TestRunner@7db12bb6</td></tr>
-<tr>
-<td title='com.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "First page automation", "Book cart page automation"</td>
-<td><div><pre>java.io.FileNotFoundException: C:\Users\ABINESH\OneDrive\Desktop\Mahesh P\BookCart\target\Screenshot\ screenshot 0.png (The system cannot find the path specified)
+<td><div><pre>java.io.FileNotFoundException: C:\Users\ABINESH\OneDrive\Desktop\Mahesh P\BookCart\target\Screenshot\ screenshot.png (The system cannot find the path specified)
 	at java.base/java.io.FileOutputStream.open0(Native Method)
 	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
 	at java.base/java.io.FileOutputStream.&lt;init&gt;(FileOutputStream.java:235)
@@ -194,10 +84,10 @@ Session ID: 9dd0b022e621d012862b66332bafd5a8
 	at com.google.common.io.Files$FileByteSink.openStream(Files.java:185)
 	at com.google.common.io.ByteSource.copyTo(ByteSource.java:279)
 	at com.google.common.io.Files.copy(Files.java:328)
-	at com.base.BaseClassBook.screenShot(BaseClassBook.java:115)
+	at com.base.BaseClassBook.screenShot(BaseClassBook.java:114)
 	at com.step.TC_HookClass.afterScenario(TC_HookClass.java:22)
-</pre></div><a href='#' onClick='toggleBox("stack-trace672777312", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace672777312'><pre>java.io.FileNotFoundException: C:\Users\ABINESH\OneDrive\Desktop\Mahesh P\BookCart\target\Screenshot\ screenshot 0.png (The system cannot find the path specified)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2027308154", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2027308154'><pre>java.io.FileNotFoundException: C:\Users\ABINESH\OneDrive\Desktop\Mahesh P\BookCart\target\Screenshot\ screenshot.png (The system cannot find the path specified)
 	at java.base/java.io.FileOutputStream.open0(Native Method)
 	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
 	at java.base/java.io.FileOutputStream.&lt;init&gt;(FileOutputStream.java:235)
@@ -205,10 +95,10 @@ Session ID: 9dd0b022e621d012862b66332bafd5a8
 	at com.google.common.io.Files$FileByteSink.openStream(Files.java:185)
 	at com.google.common.io.ByteSource.copyTo(ByteSource.java:279)
 	at com.google.common.io.Files.copy(Files.java:328)
-	at com.base.BaseClassBook.screenShot(BaseClassBook.java:115)
+	at com.base.BaseClassBook.screenShot(BaseClassBook.java:114)
 	at com.step.TC_HookClass.afterScenario(TC_HookClass.java:22)
 </pre></div></td>
-<td>24</td>
+<td>27</td>
 <td>com.runner.TestRunner@7db12bb6</td></tr>
 </table><p>
 </body>
