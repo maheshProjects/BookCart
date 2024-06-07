@@ -65,9 +65,9 @@ public class TC2_LoginPageStep extends BaseClassBook {
 
 	}
 
-	@When("User clicl the register button after enter  all the fields")
-	public void user_clicl_the_register_button_after_enter_all_the_fields() {
-		manager.getLoginPage().registrationClick();
+	@When("User click the register button after enter  all the fields")
+	public void user_click_the_register_button_after_enter_all_the_fields() {
+		manager.getLoginPage().registrationConfirmation();
 
 	}
 

@@ -2,6 +2,7 @@ package com.base;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.file.CopyOption;
 import java.util.Iterator;
@@ -29,7 +30,7 @@ public class BaseClassBook {
 	String[] allWindows;
 	String parentWindow;
 
-	int S = 0;
+	 static int S = 0;
 
 	public void printMessage(String string) {
 		System.out.println(string);
@@ -109,10 +110,11 @@ public class BaseClassBook {
 
 		File screenshotAs = screenshot.getScreenshotAs(OutputType.FILE);
 
-		File s = new File("C:\\Users\\ABINESH\\OneDrive\\Desktop\\Mahesh P\\BookCart\\target\\Screenshot\\ screenshot.png");
+		File s = new File("C:\\Users\\ABINESH\\OneDrive\\Desktop\\Mahesh P\\BookCart\\target\\Screenshot\\ screenshot"
+				+ S + ".png");
 
 		Files.copy(screenshotAs, s);
+		S = S + 1;
 
-		S=S+1;
 	}
 }

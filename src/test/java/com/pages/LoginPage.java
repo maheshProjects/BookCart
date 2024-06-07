@@ -198,8 +198,8 @@ public class LoginPage extends BaseClassBook {
 
 	}
 
-	public void registration() {
-		click(maleButton);
+	public void registrationConfirmation() {
+		click(registerBtn);
 
 	}
 

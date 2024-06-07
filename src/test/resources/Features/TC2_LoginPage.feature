@@ -1,4 +1,3 @@
-
 Feature: Automation for an login page
 
   Scenario: Automation of login details
@@ -15,6 +14,7 @@ Feature: Automation for an login page
     And User to click the login button
     Then User should verify the error message after click login button "Username" and "Password"
 
+  @Run
   Scenario Outline: Automation of registration
     Given User select to the chrome browser
     When User navigate to the URL
@@ -25,4 +25,4 @@ Feature: Automation for an login page
 
     Examples: 
       | fName  | lName | uName     | passWord   | confirmPass |
-      | Mahesh | P     | mashp1803 | Mashp@1803 | Mashp@1803  |
+      | Mahesh | P     | mashp1997 | Mashp@1997 | Mashp@1997  |

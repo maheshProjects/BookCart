@@ -6,7 +6,7 @@
 	<artifactId>BookCart</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<dependencies>
-		
+
 		<!--https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
@@ -35,15 +35,14 @@
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-java</artifactId>
-			<version>7.10.1</version>
+			<version>7.18.0</version>
 		</dependency>
-
 
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-testng</artifactId>
-			<version>7.10.1</version>
+			<version>7.18.0</version>
 		</dependency>
 
 
